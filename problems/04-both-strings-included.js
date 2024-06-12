@@ -7,6 +7,14 @@ it should return false.
 
 // Your code here 
 
+function bothStringsIncluded(str1, str2, str3){
+    if(str1.includes(str2) && str1.includes(str2)){
+        return true;
+    } else {
+        return false;
+    }
+}
+
 // console.log(bothStringsIncluded("how now brown cow?", "panther", "cow"));  //=> false
 // console.log(bothStringsIncluded("Dance party!", "Dance", "party"));        //=> true
 // console.log(bothStringsIncluded("Question?", "tion", "?"));                //=> true

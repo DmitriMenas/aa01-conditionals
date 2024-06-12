@@ -6,6 +6,23 @@ return the original number.
 
 // Your code here 
 
+function threeOrSeven(num) {
+    if (num === 0){
+        return num;
+    } else if (num % 3 === 0 && num % 7 === 0) {
+        return 21;
+    } else if (num % 3 === 0) {
+        return 3;
+    } else if (num % 7 === 0) {
+        return 7;
+    } else {
+        return num;
+    }
+}
+
+
+threeOrSeven(4)
+
 // console.log(threeOrSeven(3));   // => 3
 // console.log(threeOrSeven(15));  // => 3
 // console.log(threeOrSeven(7));   // => 7
@@ -18,3 +35,4 @@ return the original number.
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = threeOrSeven;
+

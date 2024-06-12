@@ -7,6 +7,14 @@ return "INVALID".
 
 // Your code here 
 
+function isValidSubStr(str1, str2){
+    if(str1.toLowerCase().includes(str2)){
+        return "VALID";
+    } else {
+        return "INVALID"
+    }
+}
+
 // console.log(isValidSubStr("JOY", "joy"));                     // => 'VALID'
 // console.log(isValidSubStr("The cat jumped!", "he cat jump")); // => 'VALID'
 // console.log(isValidSubStr("Time to program", "time"));        // => 'VALID'
